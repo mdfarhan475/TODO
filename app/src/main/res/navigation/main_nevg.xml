@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nevg"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.todo.homeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_noteFragment"
+            app:destination="@id/noteFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_noteFragment2"
+            app:destination="@id/noteFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_noteFragment3"
+            app:destination="@id/noteFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteFragment"
+        android:name="com.example.todo.noteFragment"
+        android:label="fragment_note"
+        tools:layout="@layout/fragment_note" >
+        <action
+            android:id="@+id/action_noteFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.todo.loginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_signinFragment"
+            app:destination="@id/signinFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgetpasswordFragment"
+            app:destination="@id/forgetpasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signinFragment"
+        android:name="com.example.todo.signinFragment"
+        android:label="fragment_signin"
+        tools:layout="@layout/fragment_signin" >
+        <action
+            android:id="@+id/action_signinFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_signinFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetpasswordFragment"
+        android:name="com.example.todo.forgetpasswordFragment"
+        android:label="fragment_forgetpassword"
+        tools:layout="@layout/fragment_forgetpassword" />
+</navigation>

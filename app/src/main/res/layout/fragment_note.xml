@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/k2"
+    tools:context=".noteFragment">
+
+    <EditText
+        android:id="@+id/titleET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/white"
+        android:background="@drawable/custom_edittext"
+        android:fontFamily="cursive"
+        android:hint="Name of Topic"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/titleET2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="cursive"
+        android:background="@drawable/coustom_edittext"
+        android:hint="Details"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="15sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_edittext"
+            android:text="Date"
+            android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/timeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_edittext"
+            android:text="Time"
+            android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bt_bg"
+        android:backgroundTint="#00BCD4"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:textColor="@color/white" />
+
+
+
+
+</LinearLayout>
